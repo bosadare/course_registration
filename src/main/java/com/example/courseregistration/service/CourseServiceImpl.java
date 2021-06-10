@@ -28,7 +28,6 @@ public class CourseServiceImpl implements CourseService {
         course.setFaculty(courseDetails.get("faculty"));
         course.setLecturerName(courseDetails.get("lecturerName"));
         // set units
-        // dont forget to set units
         return courseRepository.save(course);
     }
 }
